@@ -15,6 +15,7 @@ html {
   line-height: 1.15; /* 2 */
   -ms-text-size-adjust: 100%; /* 3 */
   -webkit-text-size-adjust: 100%; /* 3 */
+  background-color: thistle;
 }
 
 /* Sections
@@ -456,6 +457,85 @@ template {
  * Add the correct display in IE 10-.
  */
 
+
 [hidden] {
   display: none;
+}
+
+
+/* BEGIN PERSONAL CSS */
+
+/*cornflowerblue; */
+
+html {
+    background-color: whitesmoke;
+}
+
+h1 {
+    color: darkslateblue;
+}
+
+h3 {
+    color: slateblue;
+}
+
+p {
+    color: midnightblue;
+}
+
+ul {
+    color: cornflowerblue;
+}
+
+footer p{
+    color: gray;
+}
+
+#intro_photo {
+    height: 400px;
+    width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+}
+
+.gallery {
+  width: 630px;
+  margin: 0 auto;
+  padding: 5px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+
+.gallery > div {
+  position: relative;
+  float: left;
+  padding: 5px;
+}
+
+.gallery > div > img {
+  display: block;
+  width: 200px;
+  transition: .1s transform;
+  transform: translateZ(0); /* hack */
+}
+
+.gallery > div:hover {
+  z-index: 1;
+}
+
+.gallery > div:hover > img {
+  transform: scale(1.7,1.7);
+  transition: .3s transform;
+}
+
+.cf:before, .cf:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.cf:after {
+  clear: both;
 }
